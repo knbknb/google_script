@@ -5,7 +5,9 @@
 /**     Live demo at http://twitter.com/DearAssistant    **/
 /**                                                      **/
 /**     Adapted by knb on    Mar 09, 2013                **/
-
+/**     TODO: create a cache for answered tweets.        **/
+/**     TODO: send a meaningful answer when any API      **/
+/**     quota exceeded.                                  **/
 
 function start() {
   
@@ -111,6 +113,7 @@ function sendTweet(user, reply_id, tweet) {
 }
 
 function askWolframAlpha(q) {
+  //q = "sudo_f (x > 3) or (x² > 9)";
   var request  = "http://api.wolframalpha.com/v2/query?podindex=2&format=plaintext&appid=" 
                  + ScriptProperties.getProperty("WOLFRAM_API_ID") + "&input=" + encodeString(q);
   
