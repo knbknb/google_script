@@ -1,7 +1,7 @@
 Google Scripts
 ==============
 
-Simple google scripts that do interesting stuff.
+Simple googlescripts that do interesting stuff. (Googlescript is a Javascript variant)
 
 Copied from the internet, or self-made.
 
